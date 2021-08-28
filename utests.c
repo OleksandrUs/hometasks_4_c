@@ -94,7 +94,7 @@ static void assert_true(int value, const char *name)
                 printf("PASSED %s\n", name);
         } else {
                 printf("FAILED %s\n", name);
-                printf("\t expected: %d, actual %d\n", name);
+                printf("\t expected: TRUE, actual %s\n", (value == TRUE) ? "TRUE" : "FALSE");
         }
 }
 
@@ -104,7 +104,7 @@ static void assert_false(int value, const char *name)
                 printf("PASSED %s\n", name);
         } else {
                 printf("FAILED %s\n", name);
-                printf("\t expected: %d, actual %d\n", name);
+                printf("\t expected: FALSE, actual %s\n", (value == FALSE) ? "FALSE" : "TRUE");
         }
 }
 
@@ -114,6 +114,6 @@ static void assert_equal(int expected, int actual, const char *name)
                 printf("PASSED %s\n", name);
         } else {
                 printf("FAILED %s\n", name);
-                printf("\t expected: %d, actual %d\n", name);
+                printf("\t expected: %d, actual %d\n", expected, actual);
         }
 }
