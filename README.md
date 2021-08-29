@@ -8,7 +8,7 @@ Note. The function is implemented for maximum performance, so keep in mind CPU c
 
 2. Implement Unit Test suite for the function from “C language part 3’ home task 1.
 “Write a function that copies a string to a new one dynamically allocated. The function should return the new
-string address or NULL in case of error. Avoid using the standard functions from string.h
+string address or NULL in case of error. ~~Avoid using the standard functions from string.h~~
 All the external functions, such as malloc(), memcpy (), must be mocked.
 
 The test cases for home task 1 described in task1.xls file.
